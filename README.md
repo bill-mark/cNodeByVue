@@ -1,30 +1,31 @@
 # cNodeByVue
 
-Ð´ÕâÆªÈÕÖ¾µÄÊ±ºò£¬µ±Ê±ÕýÔÚ¿ª·¢Ò»¸öÄÚÍøWEB¹ÜÀíÏîÄ¿£¬±È½ÏÁËVUEºÍng2°ëÌì»¹ÊÇ¾ö¶¨ÏÈÓÃVUEÀ´½â·ÅÉú²úÁ¦¡£
-µÈng2ÕýÊ½°æ³öÀ´ÇÒ¿Ó±»Ìî²î²»¶àÔÙÉÏ£¬¹þ¹þ¡£
-Õâ¸öÏîÄ¿Ö÷ÒªÊÇÀ´ÎªÕýÊ½ÏîÄ¿Ê¹ÓÃVUEÔÞÔÞ¾­Ñé£¬½è¼øÁËreactÉçÇøµÄreactÊµÏÖcNodeÍøÕ¾µÄË¼Â·£¬¸ÐÐ»cNodeÍøÕ¾¿ª·ÅµÄAPI¡£
+å†™è¿™ç¯‡æ—¥å¿—çš„æ—¶å€™ï¼Œå½“æ—¶æ­£åœ¨å¼€å‘ä¸€ä¸ªå†…ç½‘WEBç®¡ç†é¡¹ç›®ï¼Œæ¯”è¾ƒäº†VUEå’Œng2åŠå¤©è¿˜æ˜¯å†³å®šå…ˆç”¨VUEæ¥è§£æ”¾ç”Ÿäº§åŠ›ã€‚
+ç­‰ng2æ­£å¼ç‰ˆå‡ºæ¥ä¸”å‘è¢«å¡«å·®ä¸å¤šå†ä¸Šï¼Œå“ˆå“ˆã€‚
+è¿™ä¸ªé¡¹ç›®ä¸»è¦æ˜¯æ¥ä¸ºæ­£å¼é¡¹ç›®ä½¿ç”¨VUEèµžèµžç»éªŒï¼Œå€Ÿé‰´äº†reactç¤¾åŒºçš„reactå®žçŽ°cNodeç½‘ç«™çš„æ€è·¯ï¼Œæ„Ÿè°¢cNodeç½‘ç«™å¼€æ”¾çš„APIã€‚
 
+é¡¹ç›®è¦åœ¨å¼€å¯SSIçš„æœåŠ¡å™¨è¿è¡Œ
 
-©À©¤index.shtml          äÖÈ¾ÁÐ±íÒ³Ãæ
-©À©¤content.shtml        äÖÈ¾ÏêÇéÒ³Ãæ
-©À©¤url.shtml            ²âÊÔurl ·½·¨Ò³Ãæ
-©À©¤inc                  ËéÆ¬ÎÄ¼þ
-©¦   ©À©¤bar.html             ²à±ßÀ¸´úÂë
-©¦   ©À©¤footer.html          °æÈ¨²¿·Ö´úÂë
-©¦   ©À©¤head.html            headÇøÓòµ÷ÓÃjsµÈ´úÂë
-©¦   ©¸©¤header.html          Ò³Í·logoÒÔ¼°µ¼º½´úÂë
-©¸©¤res                  ×ÊÔ´ÎÄ¼þ
-    ©À©¤image
-    ©À©¤js
-    ©¦  ©À©¤common             ÎÒµÄ´úÂëÄ¿Â¼
-    ©¦  ©¦  ©À©¤common.js           ¹«¹²Ö´ÐÐjs
-    ©¦  ©¦  ©¸©¤method.js           ×Ô¶¨Òå·½·¨js
-    ©¦  ©À©¤jquery             jqueryÔ´ÂëÄ¿Â¼
-    ©¦  ©À©¤plugins            ÆäËû²å¼þÄ¿Â¼
-    ©¦  ©¦  ©¸©¤laypage             laypage ·ÖÒ³²å¼þ
-    ©¦  ©¸©¤vue                VUEÔ´ÂëÄ¿Â¼
-    ©¸©¤style
-        ©À©¤style.scss        sassÔ´ÎÄ¼þ
-        ©À©¤style.css         ±àÒëºÃµÄcss ÎÄ¼þ
-        ©À©¤base
-        ©¸©¤scss
+â”œâ”€index.shtml          æ¸²æŸ“åˆ—è¡¨é¡µé¢
+â”œâ”€content.shtml        æ¸²æŸ“è¯¦æƒ…é¡µé¢
+â”œâ”€url.shtml            æµ‹è¯•url æ–¹æ³•é¡µé¢
+â”œâ”€inc                  ç¢Žç‰‡æ–‡ä»¶
+â”‚   â”œâ”€bar.html             ä¾§è¾¹æ ä»£ç 
+â”‚   â”œâ”€footer.html          ç‰ˆæƒéƒ¨åˆ†ä»£ç 
+â”‚   â”œâ”€head.html            headåŒºåŸŸè°ƒç”¨jsç­‰ä»£ç 
+â”‚   â””â”€header.html          é¡µå¤´logoä»¥åŠå¯¼èˆªä»£ç 
+â””â”€res                  èµ„æºæ–‡ä»¶
+    â”œâ”€image
+    â”œâ”€js
+    â”‚  â”œâ”€common             æˆ‘çš„ä»£ç ç›®å½•
+    â”‚  â”‚  â”œâ”€common.js           å…¬å…±æ‰§è¡Œjs
+    â”‚  â”‚  â””â”€method.js           è‡ªå®šä¹‰æ–¹æ³•js
+    â”‚  â”œâ”€jquery             jqueryæºç ç›®å½•
+    â”‚  â”œâ”€plugins            å…¶ä»–æ’ä»¶ç›®å½•
+    â”‚  â”‚  â””â”€laypage             laypage åˆ†é¡µæ’ä»¶
+    â”‚  â””â”€vue                VUEæºç ç›®å½•
+    â””â”€style
+        â”œâ”€style.scss        sassæºæ–‡ä»¶
+        â”œâ”€style.css         ç¼–è¯‘å¥½çš„css æ–‡ä»¶
+        â”œâ”€base
+        â””â”€scss
